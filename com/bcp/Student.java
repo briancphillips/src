@@ -1,8 +1,7 @@
 public final class Student {
 	public final String name;
 	private final int studentID;
-	private int numCourses;
-	private String[] courses;
+	private int numGrades;	
 	private int[] grades;
 
 	public Student(final String name, final int studentID) {
@@ -20,9 +19,9 @@ public final class Student {
 	
 	public double getAverageGrade() {
 		int sum = 0;
-		for (int i = 0; i < numCourses; i++) {
+		for (int i = 0; i < numGrades; i++) {
 			sum += grades[i];
 		}
-		return (double) sum / numCourses;
+		return (double) sum / numGrades;
 	}
 }
